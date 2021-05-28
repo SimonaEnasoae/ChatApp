@@ -1,0 +1,17 @@
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-title>
+      Login
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <div class="ion-padding">
+    <ion-label>Type a Username:</ion-label>
+    <ion-input placeholder="Username..." [(ngModel)]="username"></ion-input>
+    <ion-button (click)="login()">Enter</ion-button>
+    <ion-label *ngIf="isShowError"> Already Logged! </ion-label>
+
+  </div>
+</ion-content>
